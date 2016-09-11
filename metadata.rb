@@ -1,0 +1,7 @@
+name 'jdk'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures jdk'
+long_description 'Installs/Configures jdk'
+version '0.1.0'
