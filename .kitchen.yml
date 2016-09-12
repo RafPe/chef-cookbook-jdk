@@ -1,19 +1,17 @@
 ---
 driver:
   name: vagrant
+  customize:
+    memory: 256
+    cpus: 1
 
 provisioner:
   name: chef_zero
-
-verifier:
-  name: inspec
+  client_rb:
+    audit_mode: :enabled
 
 platforms:
-  - name: ubuntu-16.04
   - name: centos-7.2
 
 suites:
   - name: default
-    run_list:
-      - recipe[jdk::default]
-    attributes:
